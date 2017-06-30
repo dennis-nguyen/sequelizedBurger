@@ -2,8 +2,6 @@ let express = require("express");
 let router = express.Router();
 let db = require("../models");
 
-console.log(db.Burger);
-
 router.get("/", function (req, res) {
   db.Burger.findAll({})
     .then(function (result) {

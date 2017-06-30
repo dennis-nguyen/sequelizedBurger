@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const methodOverride = require("method-override");
 const exphbs = require("express-handlebars");
 let routes = require("./controllers/burgers_controllers.js");
-var db = require("./models");
+let db = require("./models");
 
 let PORT = process.env.PORT || 3000;
 
